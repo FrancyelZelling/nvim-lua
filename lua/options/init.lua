@@ -34,6 +34,7 @@ vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
+vim.g.completeopt="menu,menuone,noselect,noinsert"
 
 -- set colorscheme
 vim.o.background = "dark"
