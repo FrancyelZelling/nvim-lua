@@ -20,3 +20,6 @@ map('n', '<C-f>', ':NvimTreeFindFile<CR>', {noremap = true, silent = false})
 map('v', '<', '<gv', {noremap = true, silent = false})
 map('v', '>', '>gv', {noremap = true, silent = false})
 
+-- Testing lsp stuff
+map('i', '<C-k>', '<cmd>:lua vim.lsp.buf.signature_help()<CR>', {noremap = true, silent = true})
+

@@ -18,7 +18,9 @@ local mappings = {
     a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', "Code actions"},
     e = {'<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', "Show line diagnostics"},
     q = {'<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', "Show loclist"},
-    f = {'<cmd>lua vim.diagnostic.open_float()<CR>', "Show Float Diagnostics"}
+    f = {'<cmd>lua vim.diagnostic.open_float()<CR>', "Show Float Diagnostics"},
+    F = {'<cmd>lua vim.lsp.buf.formatting_sync()<CR>', "Show Float Diagnostics"},
+    -- s = {'<cmd>lua vim.lsp.buf.signature_help<CR>', "Show Signature Help"}
   },
 }
 
