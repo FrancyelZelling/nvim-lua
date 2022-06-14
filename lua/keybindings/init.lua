@@ -13,9 +13,10 @@ map('i', 'kj', '<ESC>', {noremap = true, silent = false})
 
 -- Nvim-tree keybindings
 map('n', '<leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = false})
-map('n', '<C-r>', ':NvimTreeRefresh', {noremap = true, silent = false})
-map('n', '<C-f>', ':NvimTreeFindFile', {noremap = true, silent = false})
+map('n', '<C-r>', ':NvimTreeRefresh<CR>', {noremap = true, silent = false})
+map('n', '<C-f>', ':NvimTreeFindFile<CR>', {noremap = true, silent = false})
 
 -- Change indent level and maintain previous highlight
 map('v', '<', '<gv', {noremap = true, silent = false})
 map('v', '>', '>gv', {noremap = true, silent = false})
+

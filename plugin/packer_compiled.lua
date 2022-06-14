@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/zelling/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/zelling/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-ts-autotag"] = {
     loaded = true,
     path = "/home/zelling/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
