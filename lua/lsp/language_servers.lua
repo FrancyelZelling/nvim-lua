@@ -1,6 +1,13 @@
 -- Setup lspconfig.
 local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+-- npm i -g vscode-langservers-extracted
 require("lspconfig").html.setup({
+	capabilities = capabilities,
+})
+
+-- npm i -g vscode-langservers-extracted
+require("lspconfig").cssls.setup({
 	capabilities = capabilities,
 })
 
@@ -8,14 +15,11 @@ require("lspconfig").html.setup({
 local on_attach = function(client, bufnr)
 	if client.name == "tsserver" then
 		client.server_capabilities.document_formatting = false -- 0.7 and earlier
-    client.resolved_capabilities.document_formatting = false -- this works and the other dont
+		client.resolved_capabilities.document_formatting = false -- this works and the other dont
 	end
 end
 
-require("lspconfig").cssls.setup({
-	capabilities = capabilities,
-})
-
+-- npm install -g typescript typescript-language-server
 require("lspconfig").tsserver.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
@@ -65,4 +69,16 @@ require("lspconfig").sumneko_lua.setup({
 			},
 		},
 	},
+})
+
+-- npm install -g emmet-ls
+local lspconfig = require("lspconfig")
+local configs = require("lspconfig/configs")
+--local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+lspconfig.emmet_ls.setup({
+	-- on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
 })
