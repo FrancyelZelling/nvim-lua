@@ -1,9 +1,9 @@
-vim.cmd('filetype plugin indent on')
-vim.o.shortmess = vim.o.shortmess .. 'c'
+vim.cmd("filetype plugin indent on")
+vim.o.shortmess = vim.o.shortmess .. "c"
 vim.o.hidden = true
-vim.o.whichwrap = 'b,s,<,>,[,],h,l'
+vim.o.whichwrap = "b,s,<,>,[,],h,l"
 vim.o.pumheight = 10
-vim.o.fileencoding = 'utf-8'
+vim.o.fileencoding = "utf-8"
 vim.o.cmdheight = 2
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -34,16 +34,15 @@ vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
-vim.g.completeopt="menu,menuone,noselect,noinsert"
+vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- set colorscheme
 vim.o.background = "dark"
-vim.g.nvcode_termcolors=256
-vim.cmd('syntax on')
-vim.cmd('colorscheme aurora')
+vim.g.nvcode_termcolors = 256
+vim.cmd("syntax on")
 
 -- abreviations
-vim.cmd[[
+vim.cmd([[
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev Qall! qall!
@@ -55,10 +54,10 @@ cnoreabbrev W w
 cnoreabbrev w w!
 cnoreabbrev Q q
 cnoreabbrev Qall qall
-]]
+]])
 
 -- WSL yank
-vim.cmd[[
+vim.cmd([[
 if has ("win32")
   " WSL yank support
   let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
@@ -69,4 +68,4 @@ if has ("win32")
       augroup END
   endif
 endif
-]]
+]])

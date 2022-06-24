@@ -11,3 +11,5 @@ require("telescope-config")
 require("colorizer-config")
 --require('prettier-config')
 require("lsp")
+-- Colorscheme
+require("options.nightfox")
