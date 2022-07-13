@@ -29,25 +29,13 @@ return require("packer").startup(function()
 	use("hrsh7th/cmp-cmdline")
 	use("hrsh7th/nvim-cmp")
 	use("jose-elias-alvarez/null-ls.nvim")
+	use("glepnir/lspsaga.nvim")
 
 	-- For vsnip users.
 	use("hrsh7th/cmp-vsnip")
 	use("hrsh7th/vim-vsnip")
 
-	use("onsails/lspkind-nvim")
+	use("onsails/lspkind-nvim") -- cool little icons in completions
 
 	use("EdenEast/nightfox.nvim") -- Colorscheme
-	use("christianchiarulli/nvcode-color-schemes.vim")
-
-	use({
-		"folke/lsp-trouble.nvim",
-		requires = "kyazdani42/nvim-web-devicons",
-		config = function()
-			require("trouble").setup({
-				-- your configuration comes here
-				-- or leave it empty to use the default settings
-				-- refer to the configuration section below
-			})
-		end,
-	})
 end)

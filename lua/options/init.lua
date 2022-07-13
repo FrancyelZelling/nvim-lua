@@ -4,7 +4,7 @@ vim.o.hidden = true
 vim.o.whichwrap = "b,s,<,>,[,],h,l"
 vim.o.pumheight = 10
 vim.o.fileencoding = "utf-8"
-vim.o.cmdheight = 2
+-- vim.o.cmdheight = 2
 vim.o.splitbelow = true
 vim.o.splitright = true
 vim.opt.termguicolors = true
@@ -37,7 +37,7 @@ vim.bo.expandtab = true
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- set colorscheme
-vim.o.background = "dark"
+--vim.o.background = "dark"
 vim.g.nvcode_termcolors = 256
 vim.cmd("syntax on")
 
